@@ -138,7 +138,7 @@ function Demo() {
           />
         ) : error ? (
           <p className="font-inter font-bold text-black text-center">
-            Well, that wasn't supposed to happen...
+            Well, that wasn&apos;t supposed to happen...
           </p>
         ) : (
           article.summary && (
