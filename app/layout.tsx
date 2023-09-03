@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Provider } from "react-redux";
-import { store } from "@/services/store";
+import { ProviderLayout } from "@/components";
 
 export const metadata: Metadata = {
   title: "SummarEase",
@@ -14,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <Provider store={store}>
-      <html lang="en">
-        <body>{children}</body>
-      </html>
-    </Provider>
+    <html lang="en">
+      <ProviderLayout>{children}</ProviderLayout>
+    </html>
   );
 }
