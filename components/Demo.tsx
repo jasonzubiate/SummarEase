@@ -17,7 +17,7 @@ function Demo() {
   >([]);
   const [copied, setCopied] = useState<string | boolean>("");
 
-   // RTK lazy query
+  // RTK lazy query
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   // Load data from localStorage on mount
@@ -79,6 +79,7 @@ function Demo() {
       {/* Search */}
       <div className="flex flex-col w-full gap-2">
         <form
+          id="search_input"
           className="relative flex justify-center items-center"
           onSubmit={handleSubmit}
         >
