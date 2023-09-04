@@ -10,13 +10,18 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  background-color: black;
 }
 
 main {
+
   display: flex;
   justify-content: center;
+  background-color: black;
   padding: 120px 24px 160px 24px;
+}
+
+input[type="url"] {
+  --webkit-appearance: none;
 }
 
 @media screen and (max-width: 640px) {
