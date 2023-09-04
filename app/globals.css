@@ -10,10 +10,11 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  background-color: white;
 }
 
 main {
-
+  height: 100%;
   display: flex;
   justify-content: center;
   background-color: black;
