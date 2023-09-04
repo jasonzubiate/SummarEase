@@ -1,14 +1,12 @@
-import { Demo, Hero } from "@/components";
+import { Demo, Hero, Footer } from "@/components";
 
 export default function Home() {
   return (
     <main>
-      <div className="main">
-        <div className="gradient" />
-      </div>
       <div className="app">
         <Hero />
         <Demo />
+        <Footer />
       </div>
     </main>
   );
