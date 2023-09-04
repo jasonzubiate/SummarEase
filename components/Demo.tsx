@@ -113,7 +113,11 @@ function Demo() {
         </form>
 
         {/* Browse History */}
-        <p className="text-white font-mono mt-6 text-sm">Article History</p>
+        {allArticles.length > 0 ? (
+          <p className="text-white font-mono mt-6 text-sm">Article History</p>
+        ) : (
+          ""
+        )}
         <div className="flex flex-col gap-2 max-h-60 overflow-y-auto">
           {allArticles.reverse().map((item, index) => (
             <div
