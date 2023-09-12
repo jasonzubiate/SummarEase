@@ -8,9 +8,9 @@
 
 
 body {
-  width: 100vw;
+  width: 100vw;  
   overflow-x: hidden;
-  background-color: white;
+  background-color: black;
 }
 
 main {
@@ -26,8 +26,8 @@ input[type="url"] {
 }
 
 @media screen and (max-width: 640px) {
-  .main {
-    padding: 0;
+  main {
+    padding: 60px 24px 120px 24px;
   }
 }
 
