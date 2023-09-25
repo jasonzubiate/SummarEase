@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ProviderLayout } from "@/components";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "SummarEase",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ProviderLayout>{children}</ProviderLayout>
+      <ProviderLayout>
+        {children}
+        <Analytics />
+      </ProviderLayout>
     </html>
   );
 }
