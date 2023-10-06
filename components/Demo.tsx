@@ -98,23 +98,19 @@ function Demo() {
             required
             className="url_input peer"
           />
-          {/* <button
-            type="button"
-            className="clear_btn"
-            onClick={() =>
-              setArticle({
-                url: "",
-                summary: "",
-              })
-            }
+          <button
+            type="submit"
+            className="submit_btn border peer-focus:border-[#f5f5f5] peer-focus:text-[#f5f5f5] "
           >
-            <p>&#x2715;</p>
-          </button> */}
+            <p>↵</p>
+          </button>
         </form>
 
         {/* Browse History */}
         {allArticles.length > 0 ? (
-          <p className="text-white font-mono mt-6 text-sm">Article History</p>
+          <p className="text-[#f5f5f5] font-mono mt-6 text-sm">
+            Article History
+          </p>
         ) : (
           ""
         )}
@@ -132,7 +128,7 @@ function Demo() {
                   className="w-[40%] h-[40%] object-contain"
                 />
               </div>
-              <p className="flex-1 font-mono text-white text-sm truncate">
+              <p className="flex-1 font-mono text-[#f5f5f5] text-sm truncate">
                 {item.url}
               </p>
             </div>
@@ -155,11 +151,11 @@ function Demo() {
         ) : (
           article.summary && (
             <div className="flex flex-col gap-3">
-              <h2 className="font-mono font-md text-white text-sm">
+              <h2 className="font-mono font-md text-[#f5f5f5] text-sm">
                 Article Summary
               </h2>
               <div className="summary_box">
-                <p className="font-mono font-medium text-sm text-white">
+                <p className="font-mono font-medium text-sm text-[#f5f5f5]">
                   {article.summary}
                 </p>
               </div>

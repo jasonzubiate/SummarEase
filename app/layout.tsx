@@ -1,4 +1,6 @@
 import "./globals.css";
+
+import LenisContext from "@/context/LenisContext";
 import type { Metadata } from "next";
 import { ProviderLayout } from "@/components";
 import { Analytics } from "@vercel/analytics/react";
@@ -14,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <ProviderLayout>
-        {children}
-        <Analytics />
-      </ProviderLayout>
-    </html>
+    <LenisContext>
+      <html lang="en">
+        <ProviderLayout>
+          {children}
+          <Analytics />
+        </ProviderLayout>
+      </html>
+    </LenisContext>
   );
 }

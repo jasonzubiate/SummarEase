@@ -10,14 +10,14 @@
 body {
   width: 100vw;  
   overflow-x: hidden;
-  background-color: black;
+  background-color: #0f0f0f;
 }
 
 main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: #0f0f0f;
   padding: 120px 24px 160px 24px;
 }
 
@@ -38,11 +38,11 @@ input[type="url"] {
 }
 
 .btn {
-  @apply rounded-[4px] border border-white py-1.5 px-5 text-sm text-white transition-all hover:bg-white hover:text-black;
+  @apply rounded-[4px] border border-[#f5f5f5] py-1.5 px-5 text-sm text-[#f5f5f5] transition-all hover:bg-[#f5f5f5] hover:text-black;
 }
 
 .head_text {
-  @apply  text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl text-center;
+  @apply  text-5xl font-extrabold leading-[1.15] text-[#f5f5f5] sm:text-6xl text-center;
 }
 
 .mix_gradient {
@@ -54,21 +54,32 @@ input[type="url"] {
 }
 
 .url_input {
-  @apply block w-full border-b-[1px] border-white bg-transparent py-2.5 pl-4 pr-12 text-sm text-white font-mono font-medium focus:outline-none focus:ring-0;
+  @apply block w-full border-b-[1px] border-[#f5f5f5] bg-transparent py-2.5 pl-4 pr-12 text-sm text-[#f5f5f5] font-mono font-medium focus:outline-none focus:ring-0;
 }
 
-.clear_btn {
-  @apply absolute inset-y-0 right-0 my-1.5 mr-1.5 pt-1 flex w-10 items-center justify-center font-sans text-sm font-medium text-white;
+.submit_btn {
+  @apply hover:border-[#f5f5f5] hover:text-[#f5f5f5] absolute inset-y-0 right-0 my-1.5 mr-1.5 flex w-10 h-7 items-center justify-center rounded border border-[#a9a9a9] font-sans text-sm font-medium text-[#a9a9a9];
 }
 
 .link_card {
-  @apply p-3 flex justify-start items-center flex-row border border-gray-200 gap-3 rounded-[4px] cursor-pointer;
+  @apply p-3 flex justify-start items-center flex-row border border-[#f5f5f5] gap-3 rounded-[4px] cursor-pointer;
 }
 
 .copy_btn {
-  @apply w-7 h-7 rounded-full bg-gray-50  backdrop-blur flex justify-center items-center cursor-pointer;
+  @apply w-7 h-7 rounded-full bg-[#f5f5f5]  backdrop-blur flex justify-center items-center cursor-pointer;
 }
 
 .summary_box {
-  @apply rounded-[4px] border border-x-white  backdrop-blur p-4;
+  @apply rounded-[4px] border border-x-[#f5f5f5]  backdrop-blur p-4;
+}
+
+/* WEBKIT */
+::-webkit-scrollbar {
+  width: 5px; 
+  background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: whitesmoke; 
+  border-radius: 5px; 
 }
