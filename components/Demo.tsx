@@ -145,7 +145,7 @@ function Demo() {
             className="w-20 h-20 object-contain"
           />
         ) : error ? (
-          <p className="font-inter font-bold text-black text-center">
+          <p className="font-inter font-bold text-[#f5f5f5] text-center">
             Well, that wasn&apos;t supposed to happen...
           </p>
         ) : (
